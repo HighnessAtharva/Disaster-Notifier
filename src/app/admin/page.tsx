@@ -3,6 +3,7 @@ import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
+
 function Page(): JSX.Element {
   // Access the user object from the authentication context
   // const { user } = useAuthContext();
@@ -18,8 +19,11 @@ function Page(): JSX.Element {
   }, [ user, router ] ); // Include 'router' in the dependency array to resolve eslint warning
 
   return (
+    <>
     <h1>Only logged-in users can view this page</h1>
-  );
+    <button onClick={ () => router.push( "/logout" ) }>Logout</button>
+    </>
+    );
 }
 
 export default Page;
