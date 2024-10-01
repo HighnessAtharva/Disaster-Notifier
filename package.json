@@ -15,7 +15,7 @@
     "autoprefixer": "10.4.20",
     "dotenv": "^16.4.5",
     "eslint": "9.9.1",
-    "eslint-config-next": "14.2.7",
+    "eslint-config-next": "14.2.14",
     "firebase": "^10.12.4",
     "next": "14.2.7",
     "postcss": "8.4.43",
